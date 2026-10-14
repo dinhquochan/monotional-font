@@ -1,68 +1,77 @@
 # Monotional
 
-### Version 2.10
+[![Latest release](https://img.shields.io/github/v/release/dinhquochan/monotional-font)](https://github.com/dinhquochan/monotional-font/releases/latest)
+[![License: OFL-1.1](https://img.shields.io/badge/license-OFL--1.1-blue)](LICENSE)
 
-https://github.com/dinhquochan/monotional-font
+A humanist monospace font for programming and technical work, with full
+Vietnamese support.
 
-A fork of [Monotional](https://github.com/regularhunter/monotional-font) by
-Hunter Wardlaw that adds full Vietnamese support.
+Monotional is based on [DejaVu Sans Mono](https://github.com/dejavu-fonts/dejavu-fonts)
+and inspired by André Berg's [Meslo](https://github.com/andreberg/Meslo-Font).
+This repository is a fork of the original
+[Monotional](https://github.com/regularhunter/monotional-font) by Hunter Wardlaw.
+It adds every Vietnamese precomposed letter and ships the dotted-zero family only.
 
-Monotional is a humanist, monospace font based on 
-[DejaVu Sans Mono](https://github.com/dejavu-fonts/dejavu-fonts) and 
-inspired by André Berg's [Meslo](https://github.com/andreberg/Meslo-Font). 
-Its goal is to provide an easily legible font for programming and 
-technical work.
+## Features
 
-This effort began while I was maintaining a 
-[downstream fork of Meslo](https://github.com/regularhunter/Meslo-Font/) 
-in order to fix some issues with it until I realized that it would be easier to 
-start over from scratch with DejaVu Sans Mono (which is itself based on 
-Bitstream Vera Sans Mono).
+- **Four styles:** Regular, Bold, Italic and Bold Italic.
+- **Built for code:** a dotted zero and reworked `1 i - _ = ' " ^ # * % @ ~`
+  glyphs compared with DejaVu Sans Mono.
+- **Full Vietnamese:** all 90 letters in U+1EA0–U+1EF9, including stacked tone
+  marks on `ă â ê ô` such as `ẳ ầ ễ ộ`.
+- **Wide coverage:** more than 3,300 glyphs across Latin, Greek, Cyrillic, box
+  drawing and Braille.
+- **Nerd Font edition:** a separate family patched with the complete
+  [Nerd Fonts](https://www.nerdfonts.com) icon set for terminals and prompts.
 
-### Changelog
+## Download
 
-See [CHANGELOG.md](CHANGELOG.md) for the version history and the
-[releases page](https://github.com/dinhquochan/monotional-font/releases) for downloads.
+Get the archives from the
+[latest release](https://github.com/dinhquochan/monotional-font/releases/latest).
 
-### Copyright and Trademark Information
+| Archive | Font family | Best for |
+| --- | --- | --- |
+| `Monotional_vX.Y.zip` | `Monotional` | Editors, IDEs and documents |
+| `Monotional_NF_vX.Y.zip` | `Monotional NF` | Terminals and shell prompts with icons |
 
-**Monotional**
+## Install
 
-Copyright © 2026 Dinh Quoc Han
+- **macOS:** open each `.ttf` file and click **Install Font**, or copy the files
+  to `~/Library/Fonts`.
+- **Windows:** select the `.ttf` files, right-click and choose **Install**.
+- **Linux:** copy the files to `~/.local/share/fonts`, then run `fc-cache -f`.
 
-Copyright © 2025 Hunter Wardlaw
+Then select the family by name. In VS Code, for example:
 
-**Fira Code**
+```json
+{
+  "editor.fontFamily": "Monotional",
+  "terminal.integrated.fontFamily": "Monotional NF"
+}
+```
 
-Copyright © 2014 The Fira Code Project Authors.
+## Build from source
 
-**Bitstream Vera Sans Mono / DejaVu Sans Mono**
+See [docs/building.md](docs/building.md) for generating the fonts, patching the
+Nerd Font edition and publishing a release.
 
-Copyright © 2003 Bitstream Vera is a trademark of Bitstream, Inc., designed by Jim Lyles.
-DejaVu changes are in public domain.
+## Changelog
 
-Copyright © 2006 Tavmjong Bah. All Rights Reserved.
+See [CHANGELOG.md](CHANGELOG.md).
 
-All other brands and product names not specifically listed are trademarks or
-registered trademarks of their respective owners.
+## Credits
 
-### Thanks
+- Hunter Wardlaw for creating Monotional.
+- Jim Lyles and Bitstream for the Bitstream Vera family, and the DejaVu
+  project for DejaVu Sans Mono.
+- André Berg for Meslo, which inspired several of Monotional's glyphs.
+- [bentodvictor](https://github.com/bentodvictor) for the original Nerd Font
+  builds of Monotional.
+- George Williams and contributors for [FontForge](https://fontforge.org).
 
-To Jim Lyles and Bitstream for the Bitstream Vera family of fonts.
+## License
 
-To André Berg for Meslo and inspiring some of the changes in Monotional.
-
-To [bentodvictor](https://github.com/bentodvictor) for the Nerd Font 
-patched versions of Monotional.
-
-To George Williams for the free font editing program 
-[FontForge](http://fontforge.org).
-
-### License
-
-Licensed under the SIL Open Font License Version 1.1
-
-You may not use this file except in compliance with the License. 
-You may obtain a copy of the License at:
-
-https://openfontlicense.org/documents/OFL.txt
+Monotional is licensed under the [SIL Open Font License 1.1](LICENSE).
+Copyright © 2026 Dinh Quoc Han and © 2025 Hunter Wardlaw; the notices for
+Bitstream Vera, DejaVu and Fira Code are in [LICENSE](LICENSE) and
+[COPYRIGHT](COPYRIGHT).
