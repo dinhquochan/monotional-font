@@ -52,24 +52,8 @@ Then select the family by name. In VS Code, for example:
 
 ## Build from source
 
-The sources are FontForge files in [`src/Monotional`](src/Monotional). With
-FontForge and its Python module installed, generate the TTFs with:
-
-```sh
-mkdir -p fonts
-for sfd in src/Monotional/*.sfd; do
-  fontforge -quiet -lang=py \
-    -c 'import fontforge, sys; fontforge.open(sys.argv[1]).generate(sys.argv[2])' \
-    "$sfd" "fonts/$(basename "${sfd%.sfd}").ttf"
-done
-```
-
-The Nerd Font edition is made by running the
-[Nerd Fonts patcher](https://github.com/ryanoasis/nerd-fonts) on
-each generated TTF with `--complete --makegroups 4`.
-
-Built fonts are published as release assets and are not committed; `fonts/`
-and `nerd-fonts/` are ignored by git.
+See [docs/building.md](docs/building.md) for generating the fonts, patching the
+Nerd Font edition and publishing a release.
 
 ## Changelog
 
@@ -88,13 +72,6 @@ See [CHANGELOG.md](CHANGELOG.md).
 ## License
 
 Monotional is licensed under the [SIL Open Font License 1.1](LICENSE).
-
-- Copyright © 2026 Dinh Quoc Han
-- Copyright © 2025 Hunter Wardlaw
-- Copyright © 2014 The Fira Code Project Authors
-- Copyright © 2006 Tavmjong Bah
-- Copyright © 2003 Bitstream, Inc. DejaVu changes are in the public domain.
-
-Bitstream Vera is a trademark of Bitstream, Inc. The full upstream notices are
-in [COPYRIGHT](COPYRIGHT). All other brands and product names are trademarks or
-registered trademarks of their respective owners.
+Copyright © 2026 Dinh Quoc Han and © 2025 Hunter Wardlaw; the notices for
+Bitstream Vera, DejaVu and Fira Code are in [LICENSE](LICENSE) and
+[COPYRIGHT](COPYRIGHT).
