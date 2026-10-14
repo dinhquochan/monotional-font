@@ -1,5 +1,3 @@
-![Typeface graphic](doc/monotional.png)
-
 # Monotional
 
 ### Version 2.10
@@ -17,14 +15,6 @@ This effort began while I was maintaining a
 in order to fix some issues with it until I realized that it would be easier to 
 start over from scratch with DejaVu Sans Mono (which is itself based on 
 Bitstream Vera Sans Mono).
-
-![Ipsum lorem](doc/monotional-ipsumlorem.png)
-
-*Figure 1: Monotional lorem ipsum*
-
-![Glyphs](doc/monotional-glyphs.png)
-
-*Figure 2: Monotional glyph chart*
 
 ### Changelog
 
