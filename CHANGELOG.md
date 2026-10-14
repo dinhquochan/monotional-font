@@ -1,5 +1,15 @@
 # Changelog
 
+## v2.11
+
+First release from this fork.
+
+ * Add full Vietnamese support: 46 precomposed letters with hook above
+   and stacked circumflex/breve tone marks (U+1EA0–U+1EF9)
+ * Center the italic and bold-italic hook above mark (U+0309)
+ * Ship the dotted-zero family only; the SZ (slashed zero) and AZ
+   (ambiguous zero) variants are no longer published
+
 ## v2.10
 
 * Rescale ` % ` glyph to 104% of original size
