@@ -2,7 +2,10 @@
 
 ### Version 2.10
 
-https://github.com/regularhunter/monotional-font
+https://github.com/dinhquochan/monotional-font
+
+A fork of [Monotional](https://github.com/regularhunter/monotional-font) by
+Hunter Wardlaw that adds full Vietnamese support.
 
 Monotional is a humanist, monospace font based on 
 [DejaVu Sans Mono](https://github.com/dejavu-fonts/dejavu-fonts) and 
@@ -18,7 +21,7 @@ Bitstream Vera Sans Mono).
 
 ### Changelog
 
-See the [latest release](https://github.com/regularhunter/monotional-font/releases) 
+See the [latest release](https://github.com/dinhquochan/monotional-font/releases) 
 for more information.
 
 **v2.10**
@@ -130,6 +133,8 @@ characters
 ### Copyright and Trademark Information
 
 **Monotional**
+
+Copyright © 2026 Dinh Quoc Han
 
 Copyright © 2025 Hunter Wardlaw
 
