@@ -10,12 +10,7 @@ Monotional is a humanist, monospace font based on
 [DejaVu Sans Mono](https://github.com/dejavu-fonts/dejavu-fonts) and 
 inspired by André Berg's [Meslo](https://github.com/andreberg/Meslo-Font). 
 Its goal is to provide an easily legible font for programming and 
-technical work. There are three variants of Monotional: Monotional (dotted 
-zero), MonotionalSZ (slashed zero), and MonotionalAZ (ambiguous zero).
-
-![Zero comparison](doc/monotional-zeroes.png)
-
-*Figure 1: Comparison between versions*
+technical work.
 
 This effort began while I was maintaining a 
 [downstream fork of Meslo](https://github.com/regularhunter/Meslo-Font/) 
@@ -25,11 +20,11 @@ Bitstream Vera Sans Mono).
 
 ![Ipsum lorem](doc/monotional-ipsumlorem.png)
 
-*Figure 2: Monotional lorem ipsum*
+*Figure 1: Monotional lorem ipsum*
 
 ![Glyphs](doc/monotional-glyphs.png)
 
-*Figure 3: Monotional glyph chart*
+*Figure 2: Monotional glyph chart*
 
 ### Changelog
 
